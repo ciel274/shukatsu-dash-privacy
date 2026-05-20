@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>プライバシーポリシー — 就活Dash!</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+      background: #f8fafc;
+      color: #1e293b;
+      line-height: 1.8;
+      padding: 40px 20px 80px;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 48px 56px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+    }
+    header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 36px;
+      padding-bottom: 28px;
+      border-bottom: 2px solid #f1f5f9;
+    }
+    .logo {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #6366f1, #8b5cf6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      flex-shrink: 0;
+    }
+    header h1 {
+      font-size: 22px;
+      font-weight: 800;
+      color: #1e293b;
+    }
+    header p {
+      font-size: 13px;
+      color: #64748b;
+      margin-top: 2px;
+    }
+    h2 {
+      font-size: 16px;
+      font-weight: 800;
+      color: #6366f1;
+      margin: 36px 0 12px;
+    }
+    h2:first-of-type { margin-top: 0; }
+    p { font-size: 14px; color: #334155; margin-bottom: 12px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      margin: 12px 0 16px;
+    }
+    th {
+      background: #f8fafc;
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 700;
+      color: #475569;
+      border: 1px solid #e2e8f0;
+    }
+    td {
+      padding: 10px 14px;
+      border: 1px solid #e2e8f0;
+      color: #334155;
+      vertical-align: top;
+    }
+    .note {
+      background: #f0fdf4;
+      border-left: 4px solid #10b981;
+      border-radius: 0 8px 8px 0;
+      padding: 12px 16px;
+      font-size: 13px;
+      color: #065f46;
+      margin: 12px 0 16px;
+    }
+    footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid #f1f5f9;
+      font-size: 12px;
+      color: #94a3b8;
+      text-align: center;
+    }
+    @media (max-width: 600px) {
+      .container { padding: 28px 24px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">💼</div>
+      <div>
+        <h1>プライバシーポリシー</h1>
+        <p>就活Dash! — Chrome拡張機能</p>
+      </div>
+    </header>
+
+    <h2>1. 収集する情報</h2>
+    <p>就活Dash!（以下「本拡張機能」）は、以下の情報をお客様のデバイス上にのみ保存します。</p>
+    <p><strong>プロフィール情報</strong><br>
+    氏名（漢字・フリガナ）、性別、生年月日、住所、郵便番号、電話番号、メールアドレス、学校名、学部・学科、入学・卒業年月、ゼミ・クラブ</p>
+    <p><strong>就活管理情報</strong><br>
+    企業名、マイページURL、選考状況、締切日、ESの設問と回答、面接メモ、タグ・メモ</p>
+
+    <h2>2. 情報の保存場所</h2>
+    <div class="note">
+      すべてのデータはお客様のブラウザ内（<code>chrome.storage.local</code> および <code>chrome.storage.sync</code>）にのみ保存されます。<strong>外部サーバーへの送信は一切行いません。</strong>
+    </div>
+
+    <h2>3. 外部サービスとの通信</h2>
+    <p>本拡張機能は以下の外部サービスとのみ通信します。個人情報（氏名・住所・メール等）を外部に送信することはありません。</p>
+    <table>
+      <thead>
+        <tr>
+          <th>サービス</th>
+          <th>用途</th>
+          <th>送信するデータ</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Google Favicon API<br><small>(t2.gstatic.com)</small></td>
+          <td>企業ロゴの表示</td>
+          <td>企業ドメイン名</td>
+        </tr>
+        <tr>
+          <td>Google 検索<br><small>(google.co.jp)</small></td>
+          <td>企業ホームページの自動取得</td>
+          <td>企業名（検索クエリ）</td>
+        </tr>
+        <tr>
+          <td>Google カレンダー / Outlook</td>
+          <td>締切日の登録（ユーザー操作時のみ）</td>
+          <td>企業名・日時</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>4. 第三者への提供</h2>
+    <p>収集した情報を第三者に販売・提供・開示することはありません。</p>
+
+    <h2>5. データの削除</h2>
+    <p>拡張機能をChromeから削除すると、保存されたすべてのデータが削除されます。ダッシュボードの「設定」ページからもデータを手動で削除できます。</p>
+
+    <h2>6. お問い合わせ</h2>
+    <p>本ポリシーに関するお問い合わせは、Chrome ウェブストアのサポートページよりご連絡ください。</p>
+
+    <footer>
+      最終更新日：2026年5月21日 &nbsp;|&nbsp; 就活Dash!
+    </footer>
+  </div>
+</body>
+</html>
